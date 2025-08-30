@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Data Scientist</title>
+  <link rel="stylesheet" href="prot.css" />
+  <meta name="description" content="Portfolio of a Data Scientist: projects, skills, and contact." />
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <a href="#" class="logo">MY<span>•</span>Portfolio</a>
+
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button id="themeToggle" class="btn ghost" aria-label="Toggle theme">🌓</button>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero__bg-gradient"></div>
+    <div class="hero__content">
+      <div class="hero__text reveal">
+        <p class="eyebrow">Hello, I’m</p>
+        <h1>Rohan Mallah</h1>
+        <h2 class="typing" data-text="Data Scientist • ML Engineer • AI Enthusiast"></h2>
+        <p class="sub">
+          I build data products that turn messy data into clear, actionable insight.
+        </p>
+        <div class="cta">
+          <a class="btn" href="#projects">See Projects</a>
+          <a class="btn ghost" href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <!-- ====== ADD YOUR PHOTO HERE ====== -->
+      <!-- Replace the src with your image file path -->
+      <div class="hero__photo reveal">
+        <img
+          src="IMG202412021447-02.jpeg"
+          alt="Your Name portrait"
+          class="profile-pic"
+        />
+        <div class="blob"></div>
+      </div>
+      <!-- ================================== -->
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h3 class="section-title reveal">About</h3>
+      <p class="lead reveal">
+        I’m a data scientist who loves solving business problems with statistics, machine
+        learning, and clean visualizations. I’ve delivered projects across NLP, time-series
+        forecasting, and recommendation systems—always focusing on measurable impact.
+      </p>
+
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <h4>What I do</h4>
+          <ul>
+            <li>Build and deploy ML models (sklearn, XGBoost, PyTorch)</li>
+            <li>Design data pipelines (Pandas, SQL, Airflow)</li>
+            <li>Tell stories with data (Matplotlib, Plotly)</li>
+          </ul>
+        </div>
+
+        <div class="about-card reveal">
+          <h4>Highlights</h4>
+          <ul>
+            <li>↑ 18% retention via churn prediction</li>
+            <li>↓ 30% manual effort with automated ETL</li>
+            <li>Realtime dashboards for leadership</li>
+          </ul>
+        </div>
+
+        <div class="about-card reveal">
+          <h4>Tools</h4>
+          <ul class="chips">
+            <li>Python</li><li>SQL</li><li>sklearn</li><li>XGBoost</li>
+            <li>PyTorch</li><li>Tableau</li><li>Airflow</li><li>Docker</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section alt">
+    <div class="container">
+      <h3 class="section-title reveal">Skills</h3>
+      <div class="skills reveal">
+        <div class="skill"><span>Python</span><div class="bar"><i style="width: 90%"></i></div></div>
+        <div class="skill"><span>Machine Learning</span><div class="bar"><i style="width: 85%"></i></div></div>
+        <div class="skill"><span>Deep Learning</span><div class="bar"><i style="width: 70%"></i></div></div>
+        <div class="skill"><span>NLP</span><div class="bar"><i style="width: 75%"></i></div></div>
+        <div class="skill"><span>SQL</span><div class="bar"><i style="width: 80%"></i></div></div>
+        <div class="skill"><span>Data Viz</span><div class="bar"><i style="width: 85%"></i></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h3 class="section-title reveal">Projects</h3>
+
+      <div class="grid">
+        <article class="card reveal">
+          <h4>Customer Churn Prediction</h4>
+          <p>End-to-end pipeline with feature engineering and XGBoost; AUC 0.89.</p>
+          <div class="tags">
+            <span>Python</span><span>sklearn</span><span>XGBoost</span>
+          </div>
+          <a class="btn small" href="#" target="_blank">View Repo</a>
+        </article>
+
+        <article class="card reveal">
+          <h4>Sales Forecasting</h4>
+          <p>Multi-step time series forecasting with cross-validation and SHAP insights.</p>
+          <div class="tags">
+            <span>Prophet</span><span>Time Series</span><span>SHAP</span>
+          </div>
+          <a class="btn small" href="#" target="_blank">View Repo</a>
+        </article>
+
+        <article class="card reveal">
+          <h4>Resume Matcher (NLP)</h4>
+          <p>Semantic search to match resumes to job descriptions using embeddings.</p>
+          <div class="tags">
+            <span>NLP</span><span>Embeddings</span><span>FastAPI</span>
+          </div>
+          <a class="btn small" href="#" target="_blank">View Demo</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h3 class="section-title reveal">Contact</h3>
+      <form class="contact reveal" onsubmit="return false;">
+        <div class="row">
+          <input type="text" placeholder="Your name" required />
+          <input type="email" placeholder="Your email" required />
+        </div>
+        <textarea rows="5" placeholder="Your message"></textarea>
+        <button class="btn" type="submit">Send Message</button>
+        <p class="muted">Or email me at <a href="mailto:you@email.com">rohanmallah0@email.com</a></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Rohan Mallah. Built with HTML, CSS & JS.</p>
+      <a href="#home" class="to-top" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <script src="prot.js" defer></script>
+</body>
+</html>
